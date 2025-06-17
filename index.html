@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKKI's Website</title>
+    <title>Your Special Website 💖</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono&display=swap">
 </head>
-<body>
-    <div class="container">
-        <div class="welcome-message">
-            <h1 class="glitch-text">Welcome to NIKKI's World</h1>
-            <p class="roast-text">Where being short is a lifestyle</p>
-            <div class="glitch-container">
-                <div class="glitch-effect"></div>
-                <div class="glitch-effect"></div>
-                <div class="glitch-effect"></div>
-            </div>
-            <a href="breach.html" class="cyber-button">Enter if you dare</a>
+<body class="innocent-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <h2>Loading...</h2>
+            <div class="progress-bar"></div>
         </div>
     </div>
 
+    <div class="container" style="display: none;">
+        <div class="welcome-box">
+            <h1>Welcome to your personalized website, NIKKI 💖</h1>
+            <p class="subtitle">Are you lesbian?</p>
+            <div class="button-container">
+                <button id="yesBtn" class="answer-btn yes-btn">YES</button>
+                <button id="noBtn" class="answer-btn no-btn">NO</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Glitch Overlay -->
+    <div class="glitch-overlay"></div>
+    
     <!-- Audio Elements -->
     <audio id="backgroundMusic" preload="auto" loop autoplay>
         <source src="audio/background-music.mp3" type="audio/mpeg">
     </audio>
-    <audio id="glitchSound" preload="auto">
+    <button id="hiddenPlayButton" style="display: none;"></button>
+    <audio id="noSound" preload="auto">
         <source src="https://www.soundjay.com/button/button-09.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yesSound" preload="auto">
+        <source src="https://www.soundjay.com/button/button-10.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="easterEggSound" preload="auto">
+        <source src="https://www.soundjay.com/button/button-11.mp3" type="audio/mpeg">
     </audio>
 
     <script src="script.js"></script>

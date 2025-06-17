@@ -279,14 +279,15 @@ function showPopups() {
             }, 2000);
         }, delay);
 
-        delay += 200; // Reduced delay between each popup
+        delay += 200; // 200ms delay between each popup
     });
 }
 
 // Show popups when page loads
 document.addEventListener('DOMContentLoaded', () => {
+    // Initial popup show
     showPopups();
     
-    // Show popups continuously with minimal delay
-    setInterval(showPopups, 2500);
+    // Show popups every 2 seconds
+    setInterval(showPopups, 2000);
 }); 

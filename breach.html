@@ -3,26 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BREACH DETECTED</title>
+    <title>SYSTEM BREACH DETECTED</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
 </head>
 <body class="breach-mode">
     <div class="container">
-        <div class="breach-message">
-            <h1 class="glitch-text">BREACH DETECTED</h1>
-            <p class="roast-text">NIKKI: System compromised. Height data exposed.</p>
-            <div class="glitch-container">
-                <div class="glitch-effect"></div>
-                <div class="glitch-effect"></div>
-                <div class="glitch-effect"></div>
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">SYSTEM BREACH REPORT</span>
+                <div class="terminal-controls">
+                    <span class="control"></span>
+                    <span class="control"></span>
+                    <span class="control"></span>
+                </div>
             </div>
-            <a href="final.html" class="cyber-button">View Final Diagnosis</a>
+            <div class="terminal-content">
+                <div id="typingText" class="typing-text"></div>
+                
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="label">HEIGHT:</span>
+                        <span class="value glitch-text">NO GROWTH FROM 2015</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">RELATIONSHIP STATUS:</span>
+                        <span class="value glitch-text">You look like the ads. Loud, annoying</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">MENTAL STABILITY:</span>
+                        <span class="value glitch-text">BRAINLESS</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">HOE LEVEL:</span>
+                        <span class="value glitch-text">1O0</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">SOCIAL LIFE:</span>
+                        <span class="value glitch-text">NO LIFE</span>
+                    </div>
+                </div>
+
+                <div class="photo-container">
+                    <div class="photo-placeholder glitch-effect">
+                        [i dont have yo bitch faceee
+                     ]
+                    </div>
+                </div>
+
+                <div class="system-log">
+                    <p class="log-entry">> Scanning social media presence... .....bitch is too ugly to post pics</p>
+                    <p class="log-entry">> Gallery BREACHING: Excessive cat photoS</p>
+                    <p class="log-entry">> Analyzing dating profile...</p>
+                    <p class="log-entry">> Status: Single AF(nigg get a guy)</p>
+                    <p class="log-entry">> Calculating height...(shorter than one who created this website)</p>
+                    <p class="log-entry">> Result:RIYAL BITCH</p>
+                </div>
+
+                <button id="downloadBtn" class="download-btn">DOWNLOAD FULL REPORT</button>
+            </div>
         </div>
     </div>
 
     <!-- Audio Elements -->
-    <audio id="backgroundMusic" preload="auto" loop autoplay>
+    <audio id="backgroundMusic" preload="auto" loop>
         <source src="audio/breach-music.mp3" type="audio/mpeg">
     </audio>
     <audio id="glitchSound" preload="auto">
